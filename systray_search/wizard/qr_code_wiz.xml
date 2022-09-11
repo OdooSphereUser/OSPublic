@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="qr_code_generator_view_form" model="ir.ui.view">
+        <field name="name">popup.wizardz</field>
+        <field name="model">popup.wizardz</field>
+        <field name="arch" type="xml">
+            <form string="QR Code Generator">
+                <group>
+                    <field name="purchase_limit_amount"/>
+                </group>
+<!--                <footer>-->
+<!--                    <button name="action_import" string="Import Document" type="object" class="btn-primary"/>-->
+<!--                    <button string="Cancel" class="btn-secondary" special="cancel" />-->
+<!--                </footer>-->
+            </form>
+        </field>
+    </record>
+
+    <record id="action_qr_code_generator" model="ir.actions.act_window">
+        <field name="name">QR Code Generator</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">popup.wizardz</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="qr_code_generator_view_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
