@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="SearchBarSystray">
+        <div class="new_icon">
+            <div id="topnav">
+                <div class="search-container" role="search">
+                    <div class="o_searchbar_form s_searchbar_input o_wsale_products_searchbar_form w-100 w-md-auto mr-auto mb-2"
+                          method="get" data-snippet="s_searchbar_input">
+                        <div>
+                            <input type="search" id="input" placeholder="Search products.."
+                                    name="search"/>
+                            <button  id="button" class="oe_inline">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+<!--    <record model="ir.actions.act_window" id="master_search_action">-->
+<!--        <field name="name">Search</field>-->
+<!--        <field name="res_model">systray.search</field>-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="context">{'active_test': False, 'search_default_filter_active': 1}</field>-->
+<!--    </record>-->
+</templates>
+
+
+

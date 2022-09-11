@@ -1,0 +1,20 @@
+.master_search_action .search-container {
+  float: right;
+}
+
+
+
+.master_search_action .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.master_search_action .search-container button:hover {
+  background: #ccc;
+}
